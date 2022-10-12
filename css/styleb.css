@@ -1,0 +1,377 @@
+/*
+ * Feel free to change name of colors if you need it
+ * Feel free to add new colors if you need it
+ */
+:root {
+    --bg-color--dark: #0b192f;
+    --bg-color--header: #162b4d;
+    --link: #fff;
+    --link--hover: rgba(184, 184, 184, 0.25);
+    --bg-footer-color: #162b4d;;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.post-1 {
+    background: #B71757;
+}
+
+.post-1:hover div, .post-1:hover article, .post-1:hover img {
+    cursor: pointer;
+    opacity: 0.6;
+    transition-duration: 0.2s;
+}
+
+.post-2 {
+    background: #0D7E71;
+}
+
+.post-2:hover div, .post-2:hover article, .post-2:hover img {
+    cursor: pointer;
+    opacity: 0.6;
+    transition-duration: 0.2s;
+}
+
+.post-3 {
+    background: #b1660e;
+}
+
+.post-3:hover div, .post-3:hover article, .post-3:hover img {
+    cursor: pointer;
+    opacity: 0.6;
+    transition-duration: 0.2s;
+}
+
+.post-4 {
+    background: #d12767;
+}
+
+.post-4:hover div, .post-4:hover article, .post-4:hover img {
+    cursor: pointer;
+    opacity: 0.6;
+    transition-duration: 0.2s;
+}
+
+.post-5 {
+    background: #2d95bb;
+}
+
+.post-5:hover div, .post-5:hover article, .post-5:hover img {
+    cursor: pointer;
+    opacity: 0.6;
+    transition-duration: 0.2s;
+}
+
+body h2, body pre {
+    font-family: roboto;
+}
+
+body {
+    font-weight: normal;
+    background-color: var(--bg-color--dark);
+    margin: 0;
+    font-family: roboto;
+    padding: 0 14%;
+}
+
+header {
+    padding: 0;
+    margin: 0 0 30px;
+    background-color: var(--bg-color--header);
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1 {
+    padding: 20px;
+    font-weight: lighter;
+    margin: 0;
+    color: white;
+}
+
+header em {
+    font-style: normal;
+    color: #B71757;
+}
+
+nav span {
+    display: none;
+}
+
+nav {
+    display: flex;
+    padding: 0 45px;
+}
+
+nav a {
+    padding: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 18px;
+    transition-duration: 0.4s;
+}
+
+nav a:hover {
+    background-color: var(--link--hover);
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 20px;
+}
+
+.posts {
+    width: 75%;
+}
+
+.posts section {
+    display: flex;
+}
+
+.posts section img {
+    object-fit: fill;
+    max-width: 50%;
+    height: auto;
+}
+
+.post {
+    display: flex;
+    justify-content: space-between;
+    max-width: 50%;
+}
+
+.post, .post article {
+    padding: 10px;
+}
+
+.post, .post h2 {
+    color: white;
+    font-weight: lighter;
+    display: flex;
+}
+
+.post h2 {
+    margin: 0;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.post p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 18px;
+}
+
+.post div p, .post div h2 {
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.3);
+    margin: 0;
+}
+
+.post div h2 {
+    font-size: 60px;
+
+}
+
+.post div {
+    max-width: 20%;
+    padding: 10px 0;
+}
+
+.post article {
+    padding: 50px;
+    max-width: 80%;
+}
+
+.post-5{
+    max-width: 100%;
+}
+
+.posts section:nth-child(odd) .post {
+    flex-direction: row-reverse;
+}
+
+.posts section:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.posts section:nth-child(even) div {
+    text-align: right;
+}
+
+.news {
+    color: white;
+    max-width: 25%;
+    margin: 0 0 0 20px;
+}
+
+.news img {
+    object-fit: cover;
+    max-height: 150px;
+    width: 100%;
+}
+
+.news section {
+    background-color: white;
+    margin: 0 0 20px;
+}
+
+.news article {
+    padding: 30px;
+    color: black;
+}
+
+.news article h2, .news article {
+    font-weight: lighter;
+    margin: 0;
+}
+
+.news article h2 {
+    font-weight: normal;
+    color: black;
+    font-size: 30px;
+
+}
+
+footer {
+    background-color: var(--bg-footer-color);
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer pre {
+    font-size: 18px;
+    font-weight: lighter;
+    line-height: 26px;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 20px;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav span {
+        display: block;
+        background: #fff;
+        width: 10px;
+        border-radius: 10px;
+        height: 1px;
+        margin: 1px 7px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        display: none;
+        padding: 20px;
+    }
+
+    nav:hover a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav:hover span {
+        display: none;
+    }
+
+    body {
+        padding: 3% 3% 0;
+    }
+
+    .posts{
+        width: 60%;
+    }
+
+    .posts section {
+        flex-direction: column;
+    }
+
+    .posts section img {
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    .post div {
+        text-align: left;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .post article {
+        text-align: left;
+        max-width: 100%;
+        padding: 20px;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .post {
+        max-width: 100%;
+        display: grid;
+        grid-auto-flow: row;
+    }
+
+    .posts section:nth-child(even) {
+        width: 100%;
+        display: block;
+    }
+
+    .news{
+        max-width: 40%;
+    }
+
+    footer {
+        margin: 30px 0 0;
+        padding: 40px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    footer pre {
+        overflow-x: auto;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    main {
+        display: block;
+        margin: 0;
+    }
+
+    .posts {
+        width: 100%;
+    }
+
+    .news {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .news section {
+        background-color: white;
+        margin: 0;
+    }
+}
