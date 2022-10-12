@@ -1,0 +1,126 @@
+*{
+    transition-duration: 0.6s;
+}
+
+div.tm-content-box.flex-2-col{
+    display: flex;
+    align-items: stretch;
+}
+
+div.padding-medium.flex-item.tm-team-description-container.flex-item{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+}
+
+div.flex-item.polytechnic{
+    display: inline-block;
+    width: 60%;
+}
+
+img.polytechnic{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+li.box.box-bg:hover h2{
+    background-color: #2dcae5;
+    color: white;
+}
+
+p::first-letter{
+    color: #87CEFA;
+    font-size: 30px;
+}
+
+p.tm-banner-text::first-letter{
+    color: #666;
+    font-size: 24px;
+}
+
+.tm-content-box{
+    box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.22);
+}
+
+.triangle::before{
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 50px solid #72b1d3;
+    border-top: 10px solid #72b1d3;
+    border-bottom: 10px solid transparent;
+    border-right: 50px solid transparent;
+}
+
+div.tm-content-box.flex-2-col h2.tm-section-title{
+    color: gainsboro;
+    letter-spacing: 5px;
+}
+
+h2 + p{
+    font-style: italic;
+}
+
+p.noble-text{
+    text-indent: 1em;
+}
+
+section.heading div.padding-medium li a{
+    color: #666;
+    text-decoration: none;
+}
+
+section.heading div.padding-medium li a:visited{
+    text-decoration: underline #666 double 5px;
+}
+
+section.heading div.padding-medium li a:hover{
+    color: #2dcae5;
+}
+
+section.heading div.padding-medium li:nth-child(1) a::after, section.heading div.padding-medium li:nth-child(3)
+a::after{
+    content: 'New';
+    color: red;
+    font-size: 10px;
+    position: relative;
+    bottom:0.5em;
+}
+
+section.blocks div.tm-content-box{
+    padding: 10px;
+}
+
+section.blocks div.tm-content-box li{
+    padding: 5px;
+}
+
+section.blocks div.tm-content-box li:nth-child(2n){
+    background: #ececec;
+}
+
+li.box.box-work div p::first-letter{
+    color: #666;
+}
+
+#contact button{
+    float: right;
+    width: 8em;
+    height: 3em;
+    background: white;
+    color: #25c8ef;
+    border: 2px solid #25c8ef;
+}
+
+#contact button:hover{
+    background: #25c8ef;
+    color: white;
+}
+
+li.tm-nav-item a:hover{
+    background-color: #e3e3e3;
+}
